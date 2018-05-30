@@ -7,6 +7,12 @@ var colorscale = d3.scale.category10();
 var LegendOptions = ['Smartphone','Tablet'];
 
 //Data
+var d;
+$.getJSON('jsondata.json')
+.done(function (data) {
+d = data;
+});
+
 var d = [
 		  [
 			{axis:"Email",value:0.59},
